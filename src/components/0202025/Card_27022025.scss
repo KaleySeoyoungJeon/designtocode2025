@@ -3,8 +3,9 @@
 .visual {
     width: 393px;
     height: 852px;
-    border: 1px solid grey; //tes
-    padding: 1rem;
+    border: 1px solid grey; //test
+    border-radius: 55px;
+    padding: 2.5rem 1rem;
     box-sizing: border-box;
     &__container {
         @include flex (flex, column, space-between, stretch);

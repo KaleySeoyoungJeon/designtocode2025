@@ -1,0 +1,102 @@
+@use "../../styles/mixins" as *;
+
+.card {
+    width: 393px;
+    height: 852px;
+    border: 1px solid rgb(209, 209, 209); 
+    padding: 2.5rem 1rem;
+    box-sizing: border-box;
+    margin: 0;
+    border-radius: 55px;
+    @include flex (flex, column, space-between, stretch);
+
+    &__top {
+        @include flex (flex, column, center, center);
+        padding: 1rem;
+        border: 1px solid #E1E1E1;
+        border-radius: 1.5rem;
+        background-color: #FBFBFB;
+        margin-bottom: 1rem;
+        &--text {
+            color: #5A5A5A;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    &__single {
+        border-radius: 24px;
+        padding: 1rem;
+        cursor: pointer;
+        width: auto;
+        position: relative;
+        transition: transform 0.5s ease-in, background-color 0.9s ease-in, width 0.5s ease-in, opacity 0.3s ease-in;
+        transform-origin: center;
+        &.expanded {
+            grid-column: span 2;
+            animation: expand 0.5s ease-in;
+        }
+        @keyframes expand {
+            0% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        &--header {
+            @include flex (flex, row, space-between, center);
+            padding-bottom: 16px;
+            }
+        &--title {
+            font-size: 18px;
+        }
+        &--content {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 130%;
+        }
+        .close-button {
+            background-color: #60510D;
+            border: none;
+            border-radius: 333px;
+            width: 24px;
+            height: 24px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    .yellow { background-color: #FBF4D8; border: 1px solid #60510D; color:#60510D; }
+    .red { background-color: #F8E4DE; border: 1px solid #75221A; color:  #75221A; }
+    .green { background-color: #DAEBE4; border: 1px solid #2C6D54; color:  #2C6D54; }
+    .blue { background-color: #E2ECF7; border: 1px solid #1E5690; color:  #1E5690; }
+    .pink { background-color: #FFF1FC; border: 1px solid #90347D; color:  #90347D; }
+    .purple { background-color: #E2E2F6; border: 1px solid #3B3B77; color:  #3B3B77; }
+}
+
+.footer {
+    @include flex (flex, normal, norma, center);
+    border: 1px solid #E1E1E1;
+    border-radius: 1.5rem;
+    background-color: #FBFBFB;
+    margin-top: 1rem;
+    &--date {
+        width: 26%;
+        padding: 1rem;
+        border-right: 1px solid #E1E1E1;
+    }
+    &--name{
+        padding-left: 1rem;
+    }
+    .footer-text{
+        font-size: 13px;
+        color: #5C5C5C;
+    }
+}
+
+h3 {
+    margin: 0;
+}
