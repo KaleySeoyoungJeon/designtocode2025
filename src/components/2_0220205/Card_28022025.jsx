@@ -25,6 +25,7 @@ function Card_2802025 () {
             <div className="card__top">
                 <p className="card__top--text">❋</p>
                 <p className="card__top--text">C.G Jung’s quotes to guid your path</p>
+                <p className="card__top--text">Click each card</p>
             </div>
             <div className='card__wrapper'>
                 {cardData.map((card, index) => {
