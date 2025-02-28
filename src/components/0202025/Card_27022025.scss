@@ -34,7 +34,11 @@
         width: 90%;
         font-size: 6rem;
         color: black;
-        line-height: 112%;
+        line-height: 110%;
+        transition: font-size 0.4s ease-in-out;
+    }
+    &--title:hover {
+        font-size: 7rem;
     }
     &__footer {
         @include flex (flex, normal, norma, center);
