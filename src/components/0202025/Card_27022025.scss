@@ -87,18 +87,18 @@
     animation-name: float-cloud;
     animation-delay: 0s;
 }
-.icon-leaf-green {
-    width: 1.5rem;
+.icon-pill {
+    width: 3rem;
     top: 640px;
     left: 300px;
-    animation-name: float-leaf-green;
+    animation-name: float-pill;
     animation-delay: 0.3s;
 }
-.icon-leaf-yellow {
-    width: 1.5rem;
-    top: 420px;
-    left: 40px;
-    animation-name: float-leaf-green;
+.icon-pill-lg {
+    width: 2rem;
+    top: 440px;
+    left: 50px;
+    animation-name: float-pill;
     animation-delay: 0.3s;
 }
 
@@ -114,7 +114,7 @@
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-12px); }
 }
-@keyframes float-leaf-green {
+@keyframes float-pill {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-12px); }
 }

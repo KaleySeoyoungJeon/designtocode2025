@@ -1,8 +1,7 @@
 import './Card_27022025.scss' 
 import visual1_flower from '../../assets/Card_27022025/visual1_flower.png'
 import visual1_cloud from '../../assets/Card_27022025/visual1_cloud.png'
-import visual1_leaf_green from '../../assets/Card_27022025/visual1_leaf_green.png'
-import visual1_leaf_yellow from '../../assets/Card_27022025/visual1_leaf_yellow.png'
+import visual1_pill_lg from '../../assets/Card_27022025/visual1_pill_lg.png'
 import visual1_flower_dark from '../../assets/Card_27022025/visual1_flower_dark.png'
 
 function Card_2702025 () {
@@ -23,9 +22,9 @@ return (
             </div>
             <img src={visual1_flower} alt="flower icon" className="icon icon-flower" />
             <img src={visual1_cloud} alt="cloud icon" className="icon icon-cloud" />
-            <img src={visual1_leaf_green} alt="leaf green icon" className="icon icon-leaf-green" />
-            <img src={visual1_leaf_yellow} alt="leaf yellow icon" className="icon icon-leaf-yellow" />
-            <img src={visual1_flower_dark} alt="leaf yellow icon" className="icon icon-flower-dark"/>
+            <img src={visual1_flower_dark} alt="dark flower icon" className="icon icon-flower-dark" />
+            <img src={visual1_pill_lg} alt="leaf yellow icon" className="icon icon-pill" />
+            <img src={visual1_pill_lg} alt="leaf yellow icon" className="icon icon-pill-lg"/>
             <div className="visual__hero">
                 <h2 className='visual--title'>
                     Action is the cure
