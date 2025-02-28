@@ -14,12 +14,12 @@ return (
     <section className="visual">
         <div className="visual__container">
             <div className="visual__top">
-                <div className="visual__top--menu">
+                <button className="visual__top--menu">
                     <p className="text">Home</p>
-                </div>
-                <div className="visual__top--menu">
+                </button>
+                <button className="visual__top--menu">
                     <p className="text">Menu</p>
-                </div>
+                </button>
             </div>
             <img src={visual1_flower} alt="flower icon" className="icon icon-flower" />
             <img src={visual1_cloud} alt="cloud icon" className="icon icon-cloud" />

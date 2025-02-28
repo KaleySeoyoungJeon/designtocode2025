@@ -17,6 +17,11 @@
             border-radius: 333px;
             background-color: black;
             padding: .75rem 1rem;
+            border: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+        &--menu:hover {
+            background-color: #5F5F5F;
         }
         .text {
             color: white;
