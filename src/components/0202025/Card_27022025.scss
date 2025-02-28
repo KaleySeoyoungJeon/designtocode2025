@@ -1,5 +1,116 @@
+@use "../../styles/mixins" as *;
+
 .visual {
     width: 393px;
     height: 852px;
     border: 1px solid grey; //tes
+    padding: 1rem;
+    box-sizing: border-box;
+    &__container {
+        @include flex (flex, column, space-between, stretch);
+        height: 100%;
+    }
+    &__top {
+        width: 100%;
+        @include flex (flex, row, space-between, center);
+        &--menu {
+            border-radius: 333px;
+            background-color: black;
+            padding: .75rem 1rem;
+        }
+        .text {
+            color: white;
+            font-size: 13px;
+            line-height: 80%;
+        }
+    }
+    &--title {
+        text-align: center;
+        width: 90%;
+        font-size: 6rem;
+        color: black;
+        line-height: 112%;
+    }
+    &__footer {
+        @include flex (flex, normal, norma, center);
+        border: 1px solid #E1E1E1;
+        border-radius: 1.125rem;
+        background-color: #FBFBFB;
+        &--date {
+            width: 26%;
+            padding: 1rem;
+            border-right: 1px solid #E1E1E1;
+        }
+        &--name{
+            padding-left: 1rem;
+        }
+        .footer-text{
+            font-size: 13px;
+        }
+    }
+}
+
+.icon {
+    position: absolute;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.icon-flower {
+    width: 5.5rem;
+    top: 750px;
+    left: 210px;
+    animation-name: float-flower;
+    animation-delay: 0.2s;
+}
+.icon-flower-dark {
+    width: 4rem;
+    top: 450px;
+    left: 290px;
+    animation-name: float-flower-dark;
+    animation-delay: 0.7s;
+}
+.icon-cloud {
+    width: 5.5rem;
+    top: 640px;
+    left: 20px;
+    animation-name: float-cloud;
+    animation-delay: 0s;
+}
+.icon-leaf-green {
+    width: 1.5rem;
+    top: 640px;
+    left: 300px;
+    animation-name: float-leaf-green;
+    animation-delay: 0.3s;
+}
+.icon-leaf-yellow {
+    width: 1.5rem;
+    top: 420px;
+    left: 40px;
+    animation-name: float-leaf-green;
+    animation-delay: 0.3s;
+}
+
+@keyframes float-flower {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+@keyframes float-flower-dark {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+@keyframes float-cloud {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+@keyframes float-leaf-green {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+
+p, h2 {
+    margin: 0;
 }
